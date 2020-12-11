@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import com.github.gilbertotorrezan.viacep.shared.ViaCEPEndereco;
 
@@ -18,7 +19,8 @@ public class Endereco {
 	private String nome;
 	private String telefone;
 	private String cep;
-	//private ViaCEPEndereco viaCEPEndereco;
+//	@ManyToOne
+//	private CEPEndereco viaCEPEndereco;
 
 	public Long getId() {
 		return id;
